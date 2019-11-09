@@ -5,40 +5,34 @@ import {createGlobalStyle} from 'styled-components';
 
 // Assets
 import '../node_modules/modern-normalize/modern-normalize.css';
-import RobotoMonoWoff from '../public/fonts/roboto-mono-v7-latin-ext-regular.woff';
-import RobotoMonoWoff2 from '../public/fonts/roboto-mono-v7-latin-ext-regular.woff2';
+import OpenSansWoff from '../public/fonts/open-sans-v17-latin-regular.woff';
+import OpenSansWoff2 from '../public/fonts/open-sans-v17-latin-regular.woff2';
 
 const GlobalStyle = createGlobalStyle`
 	@font-face {
-		font-family: 'Roboto Mono';
+		font-family: 'Open Sans';
 		font-style: normal;
 		font-weight: 400;
 		font-display: fallback;
-		src: local('Roboto Mono'), local('RobotoMono-Regular'),
-			url(${RobotoMonoWoff2}) format('woff2'),
-			url(${RobotoMonoWoff}) format('woff');
-	}
+		src: local('Open Sans'), local('OpenSans-Regular'),
+			url(${OpenSansWoff2}) format('woff2'),
+			url(${OpenSansWoff}) format('woff');
+  	}
 
 	body {
-		background-color: #212121;
-		font-family: 'Roboto Mono', monospace;
+		font-family: Open Sans, arial, sans-serif;
 		margin: auto;
-		width: 80%;
+		width: 100%;
 		font-size: 16px;
 		padding-top: 50px;
 		padding-bottom: 100px;
-		color: #fff;
 		-webkit-font-smoothing: antialiased;
 		text-rendering: optimizeSpeed;
 	}
 
-	summary {
-		cursor: pointer;
-	}
-
 	:focus {
-		outline: none;
-	}
+    	outline: none;
+  	}
 `;
 
 class MyApp extends App {
@@ -49,7 +43,7 @@ class MyApp extends App {
 			<>
 				<GlobalStyle/>
 				<Head>
-					<title>Prasówka Generator</title>
+					<title>Ship Classifier</title>
 				</Head>
 				<Component {...pageProps}/>
 			</>
