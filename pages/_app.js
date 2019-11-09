@@ -17,10 +17,10 @@ const GlobalStyle = createGlobalStyle`
 		src: local('Open Sans'), local('OpenSans-Regular'),
 			url(${OpenSansWoff2}) format('woff2'),
 			url(${OpenSansWoff}) format('woff');
-  	}
+	}
 
 	body {
-		font-family: Open Sans, arial, sans-serif;
+		font-family: 'Open Sans', arial, sans-serif;
 		margin: auto;
 		width: 100%;
 		font-size: 16px;
@@ -31,8 +31,8 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	:focus {
-    	outline: none;
-  	}
+		outline: none;
+	}
 `;
 
 class MyApp extends App {
