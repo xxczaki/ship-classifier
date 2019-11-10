@@ -40,7 +40,7 @@ As I mentioned earlier, to train the model I used Teachable Machine with the fol
 ```
 Epochs: 150
 Batch Size: 16
-Learning Rate: 0.00146
+Learning Rate: 0.00135
 ```
 
 ## Development
