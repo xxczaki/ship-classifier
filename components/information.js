@@ -3,7 +3,7 @@ import React from 'react';
 const Information = () => (
 	<>
 		<h3>How it works?</h3>
-		<p>This app uses a machine learning model trained with pictures of 8 different ship types:</p>
+		<p>This app uses a machine learning model, trained with pictures of 8 different ship types:</p>
 		<ul>
 			<li>Passenger Vessel</li>
 			<li>Container Vessel</li>
