@@ -8,6 +8,8 @@
 
 ---
 
+![Demo](demo.gif)
+
 ## About
 
 This app uses a machine learning model trained with pictures of 8 different ship types:
